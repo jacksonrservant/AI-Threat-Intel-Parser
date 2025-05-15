@@ -10,10 +10,6 @@ An AI-powered tool (in-progress) for extracting and structuring threat intellige
 
 - Fetches threat data from:
   - [CISA Known Exploited Vulnerabilities (KEV)](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-  ```
-  - [AlienVault OTX API](https://otx.alienvault.com/)
-  - [Cisco Talos Blog](https://blog.talosintelligence.com/)
-  ```
 - Parses structured threat intelligence (CVEs, IOCs, dates, vendors, etc.)
 - Outputs clean, filterable spreadsheets (`.xlsx`) for threat research and incident response use
 - Modular and script-driven for easy extension and experimentation
