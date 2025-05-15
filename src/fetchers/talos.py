@@ -17,5 +17,5 @@ def fetch_talos_latest_blog_text():
         article_soup = BeautifulSoup(article_resp.text, "html.parser")
         return "\n".join(p.get_text() for p in article_soup.find_all("p"))
     except Exception as e:
-        print(f"❌ Talos fetch failed: {e}")
+        print(f" Talos fetch failed: {e}")
         return None

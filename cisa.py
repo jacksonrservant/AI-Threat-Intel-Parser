@@ -8,6 +8,6 @@ def fetch_cisa_kev():
         data = response.json()
         return data.get("vulnerabilities", [])
     except requests.exceptions.RequestException as e:
-        print(f" Failed to fetch CISA KEV: {e}")
+        print(f"❌ Failed to fetch CISA KEV: {e}")
         return []
 

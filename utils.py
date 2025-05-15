@@ -19,17 +19,18 @@ def export_iocs_to_excel(iocs_dict, base_name="cisa_kev_iocs"):
     df = pd.DataFrame(rows)
     filename = _generate_timestamped_filename(base_name)
     df.to_excel(filename, index=False)
-    print(f" Exported IOCs to {filename}")
+    print(f"✅ Exported IOCs to {filename}")
 
 def export_cves_with_metadata(cve_data, base_name="cisa_detailed_cves"):
     """
     Export CVEs with metadata (description, vendor, etc.) to a timestamped Excel file.
     """
     if not cve_data:
-        print(" No CVE data to export.")
+        print("❌ No CVE data to export.")
         return
 
     df = pd.DataFrame(cve_data)
     filename = _generate_timestamped_filename(base_name)
     df.to_excel(filename, index=False)
-    print(f" Exported CVE data to {filename}")
+    print(f"✅ Exported CVE data to {filename}")
+
